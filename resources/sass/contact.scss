@@ -1,0 +1,154 @@
+// Created By Gullian Van Der Walt Nov 2020
+
+.contact-section {
+    min-height: 100%;
+    width: 85%;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+        0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-heading-div {
+    text-align: center;
+    padding: 1rem;
+}
+.contact-heading-div h2 {
+    margin-top: 2rem;
+}
+.contact-heading-div .h2_line {
+    width: 8%;
+    margin: 1rem 46%;
+}
+
+.contact-details,
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    margin: 4rem 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+        0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-details h3,
+.contact-form-container h3 {
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: center;
+}
+.contact-details ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 1rem 20%;
+    padding: 2rem;
+
+    list-style: none;
+}
+.contact-details ul li {
+    color: #ffffff;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+.contact-details ul li img {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+// Style Form Starts
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 2rem 15%;
+    padding: 1rem;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-row label {
+    text-align: left;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.form-row input,
+textarea {
+    border: 1px solid #0dff92;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.3rem;
+    padding: 1rem;
+    outline: none;
+    color: #0dff92;
+}
+.submit {
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem 40%;
+    border: 1px solid #0dff92;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #0dff92;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    transition: color 3s;
+    transition: background-color 2s;
+    outline: none;
+}
+.submit:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #0dff92;
+    color: #121212;
+}
+// Responsive Starts
+@media only screen and (max-width: 1725px) {
+    .contact-details ul {
+        width: 75%;
+        margin: 1rem 10%;
+    }
+}
+@media only screen and (max-width: 1420px) {
+    .contact-details ul {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contact-details ul {
+        width: 100%;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-details ul li {
+        width: 100%;
+    }
+    .submit {
+        width: 50%;
+        margin: 1rem 25%;
+    }
+}

@@ -1,0 +1,206 @@
+// Created By Gullian Van Der Walt Nov 2020
+
+.project-section {
+    min-height: 100%;
+    width: 85%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+        0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.project-heading-container {
+    text-align: center;
+    padding: 1rem;
+}
+.project-heading-container h2 {
+    margin-top: 2rem;
+}
+.project-heading-container .h2_line {
+    width: 10%;
+    margin: 1rem 45%;
+}
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0;
+}
+.project-col {
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+        0px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(0.25deg);
+    width: 40%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    text-align: center;
+}
+// Hover View
+.fa-eye {
+    font-size: 1.6rem;
+    animation: fade_in_show 0.5s;
+}
+.project-link {
+    display: block;
+    text-decoration: none;
+}
+.project-link-text {
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+.project-col {
+    text-decoration: none;
+}
+#projectLink:hover .project-link-text {
+    color: #ffffff;
+    display: inline-flex;
+    animation: fade_in_show 0.5s;
+}
+
+// Link Hover Effect
+@keyframes fade_in_show {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.project-col h3 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.project-col p {
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    margin: 4rem 1rem;
+    font-size: 1.2rem;
+}
+
+.cc-rockmenu {
+    color: fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.cc-rockmenu .rolling {
+    display: inline-block;
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 26px;
+    background: #0dff92;
+    transition: all 0.4s ease-out;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #121212;
+}
+.cc-rockmenu .rolling:hover {
+    width: 312px;
+}
+.cc-rockmenu .rolling .rolling_icon {
+    float: left;
+    z-index: 9;
+    display: inline-block;
+    font-size: 1.4rem;
+    border-radius: 26px;
+    box-sizing: border-box;
+    margin: 0 20px 0 0;
+}
+.rolling {
+    display: flex;
+}
+.cc-rockmenu .rolling .rolling_icon:hover .rolling {
+    width: 312px;
+}
+
+.cc-rockmenu .rolling i.far {
+    font-size: 1.5rem;
+    padding: 15px 10px 0 12px;
+}
+.cc-rockmenu .rolling span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 1.4rem;
+}
+.cc-rockmenu .rolling li {
+    display: inline-block;
+    list-style: outside none none;
+}
+.cc-rockmenu .rolling li a {
+    color: #6a5502;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.cc-rockmenu .rolling li a:hover {
+    color: #fff;
+}
+
+.cc-rockmenu .rolling li a:before {
+    content: '\00bb';
+}
+
+.cc-rockmenu .rolling p {
+    margin: 0;
+}
+
+.cc-rockmenu .rolling input[type='text'] {
+    width: 175px;
+    background: #0dff92 none repeat scroll 0 0;
+    border: medium none;
+    height: 35px;
+    margin: 9px 0;
+    padding: 10px;
+    color: #fff;
+}
+.cc-rockmenu .rolling input[type='submit'] {
+    background: #6a5502 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    padding: 9px;
+}
+
+// Responsive
+@media only screen and (max-width: 1000px) {
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 3rem 0;
+    }
+    .project-col {
+        text-decoration: none;
+        width: 80%;
+        margin: 1rem 10%;
+    }
+
+    .project-col h3 {
+        padding: 1rem;
+    }
+}

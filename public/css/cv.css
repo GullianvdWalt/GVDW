@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    min-height: 100vh;
+}
+body {
+    font-size: 1rem;
+    line-height: 1.8em;
+    font-family: 'Raleway', sans-serif;
+}
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #008000;
+    color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+}
+.cv-content-container {
+    padding: 1rem;
+    margin: 1rem;
+}
+.cv-content-heading-container {
+    background-color: #d3d3d3;
+    padding: 1rem;
+}
+h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cv-content-row {
+    display: flex;
+    width: 70%;
+    margin: 1rem 15%;
+    justify-content: space-between;
+}
+h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+span {
+    color: #008000;
+    font-weight: 800;
+}
+.cv-content-sub-heading-container {
+    background-color: #008000;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.cv-content-sub-heading-container h3 b {
+    font-size: 1.6rem;
+}
+.cv-content-sub-heading-container span {
+    color: #ffffff;
+}
+.cv-content-container p {
+    color: #008000;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.education-heading-span {
+    text-transform: uppercase;
+}
+.subjects-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+}
+.subjects,
+.project {
+    padding: 2rem;
+    margin: 1rem 5%;
+    width: 40%;
+}
+#subjectsSecond {
+    width: 80%;
+    margin: 1rem 10%;
+    padding: 5rem;
+}
+.cv-project-row {
+    margin-top: 1rem;
+}
+.cv-project-row p {
+    text-transform: none;
+}
+.content-list {
+    padding: 5rem;
+    margin: 1rem;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.contact-container span {
+    font-size: 1.3rem;
+}

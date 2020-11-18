@@ -1,0 +1,141 @@
+/* Created By Gullian Van Der Walt Nov 2020 */
+
+/* Asside Styles Start */
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 100%;
+    background: #000000;
+    padding: 1rem;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #0dff92;
+    animation: 1.2s ease-out 0s 1 slideInFromLeft;
+}
+/* Logo */
+.logo {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1rem;
+}
+// Nav
+nav {
+    margin-top: 6rem;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    text-align: left;
+    margin: 3rem 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: color 1s;
+}
+
+nav ul li a:hover {
+    color: #0dff92;
+}
+.fas .fa-ellipsis-h {
+    color: #0dff92;
+    display: none;
+    transition: display 2s;
+}
+nav ul li a.active {
+    color: #0dff92;
+}
+nav ul li a.active + .fa-ellipsis-h {
+    color: #0dff92;
+    display: inline-block;
+}
+.nav-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border: 1px solid rgba(238, 238, 238, 0.7);
+    width: 90%;
+}
+
+.footer-aside {
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #ffffff;
+}
+.footer-aside p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.footer-aside ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 3rem;
+}
+.footer-aside ul li {
+    list-style: none;
+}
+.footer-aside ul li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.footer-aside ul li :hover {
+    color: #0dff92;
+}
+.nav-toggle {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 1;
+    visibility: hidden;
+    padding: 20px;
+}
+.wrapper #toggleButton {
+    color: #0dff92;
+    display: none;
+    position: fixed;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.nav-toggle span {
+    margin-top: 10px;
+}
+// Toggle Menu Button
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 40px;
+    background: #0dff92;
+    position: absolute;
+    display: block;
+    content: '';
+}
+.nav-toggle span:before {
+    top: -10px;
+}
+.nav-toggle span:after {
+    bottom: -10px;
+}
+
+/* Asside Styles End */

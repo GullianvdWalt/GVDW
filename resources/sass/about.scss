@@ -1,0 +1,386 @@
+// Created By Gullian Van Der Walt Nov 2020
+
+.about-me-section {
+    min-height: 100%;
+    width: 85%;
+}
+.about-me-main-container {
+    display: flex;
+    height: auto;
+    margin: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+        0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.about-me-heading-div .h2_line {
+    width: 15%;
+    margin: 0;
+    margin: 1rem 0;
+}
+.about-me-picture-container,
+.about-me-content-container {
+    width: 50%;
+}
+.about-me-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+// Style Image Container Starts
+.about-me-img-inner {
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 70%;
+    height: 80%;
+    margin: 10% 15%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.about-me-image-contaier {
+    background-image: url(/images/about_me_img.jpg);
+    width: 85% !important;
+    height: 85%;
+    position: absolute;
+    top: 2rem;
+    right: -20px;
+    width: 85%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 35px 78px -23px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 35px 78px -23px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 35px 78px -23px rgba(0, 0, 0, 0.22);
+    // transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.dots {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    margin-top: 105%;
+    margin-left: 5%;
+    bottom: 15px;
+    left: 35px;
+    z-index: -2;
+}
+// Style Image Container Ends
+.about-details-container ul {
+    padding: 0.5rem;
+}
+.about-details-container ul li {
+    color: #ffffff;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.about-details-container ul li span {
+    color: #0dff92;
+}
+
+.about-me-heading-div {
+    text-align: left;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.intro-container span {
+    font-size: 2rem;
+    color: #ffffff;
+}
+.intro-container .intro-subtext {
+    color: rgb(165, 165, 165);
+    font-size: 1.6rem;
+}
+.intro-container p {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+.abot-me-line {
+    width: 70%;
+    margin: 1rem 15%;
+    border-top: 1px solid #eeeeee14;
+}
+.about-details-container {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.about-details-container ul {
+    list-style: none;
+}
+.hobbies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.hobbies-container span {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+.hobbies-container ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.hobbies-container ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.hobbies-container ul li span:hover {
+    color: #0dff92;
+}
+.hobbies-container ul li img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+}
+.hobbies-container ul li span {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+// Responsive Starts
+// Large Devices
+@media only screen and (max-width: 1700px) {
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3,
+    .intro-container span {
+        font-size: 1.8rem;
+    }
+    .about-me-img-inner {
+        width: 65%;
+        height: 80%;
+        margin: 10% 10%;
+    }
+    .about-me-image-contaier {
+        width: 100% !important;
+        height: 90%;
+        position: absolute;
+        top: 2rem;
+        right: -100px;
+    }
+    .intro-subtext {
+        font-size: 1.4rem;
+    }
+    .intro-container p {
+        font-size: 1.2rem;
+    }
+    .about-details-container ul li {
+        font-size: 1.1rem;
+    }
+    .hobbies-container ul li img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .hobbies-container ul li span {
+        font-size: 1rem;
+    }
+}
+// Medium Devices
+@media only screen and (max-width: 1500px) {
+    .about-me-img-inner {
+        height: 50%;
+        margin-top: 30%;
+    }
+    .about-me-image-contaier {
+        width: 90% !important;
+        height: 80%;
+        right: -60px;
+    }
+}
+@media only screen and (max-width: 1350px) {
+    .about-me-heading-div {
+        text-align: center;
+    }
+    .about-me-heading-div .h2_line {
+        width: 20%;
+        margin: 1rem 40%;
+    }
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-me-img-inner {
+        width: 80%;
+    }
+    .about-me-image-contaier {
+        width: 100% !important;
+        height: 90%;
+        right: -30px;
+    }
+    .about-details-container ul li {
+        font-size: 1rem;
+        padding: 0;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro-container span {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    .intro-container p {
+        font-size: 1.1rem;
+    }
+    .hobbies-container span {
+        text-align: center;
+    }
+    .hobbies-container ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hobbies-container ul li {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+}
+// Small Devices
+@media only screen and (max-width: 1220px) {
+    .about-me-picture-container {
+        width: 100%;
+    }
+    .about-me-main-container {
+        flex-direction: column;
+    }
+    .about-me-content-container {
+        width: 100%;
+    }
+    .about-me-heading-div {
+        text-align: center;
+        margin-left: 1rem;
+    }
+    .about-me-heading-div .h2_line {
+        width: 15%;
+        margin: 1rem 42.5%;
+    }
+    .about-me-img-inner {
+        margin-top: 15%;
+        width: 50%;
+        margin: 3rem 25%;
+    }
+    .about-me-image-contaier {
+        width: 90% !important;
+        height: 90%;
+        right: -30px;
+    }
+    // About Me Image
+    .dots {
+        position: relative;
+    }
+    .about-details-container ul {
+        padding: 1rem;
+    }
+    .about-details-container ul li {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .intro-container span {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .intro-subtext {
+        margin: 1rem;
+    }
+    .intro-container p {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .hobbies-container span {
+        text-align: center;
+    }
+    .hobbies-container ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    .hobbies-container ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .dots {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .hobbies-container ul {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        margin: -20px;
+    }
+    .about-details-container ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-details-container ul li span {
+        margin: 1rem 0;
+    }
+}
+// Extra Small Devices
+@media only screen and (max-width: 500px) {
+    .about-details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-me-img-inner {
+        width: 60%;
+        margin: 3rem 20%;
+    }
+    .about-me-image-contaier {
+        width: 100% !important;
+        height: 100%;
+    }
+    .hobbies-container ul {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem;
+    }
+}
