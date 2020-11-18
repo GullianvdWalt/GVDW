@@ -4,7 +4,7 @@
 @section('content')
     <div class="main-content">
       <!-- Hero Section Start -->
-      <section class="hero" style="background-image: url(images/hero_img.jpg); ">
+      <section class="hero" style="background-image: url(images/hero_img-min.jpg); ">
 
         <div class="hero-container">
           <div class="hero-text-container">
