@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GVDW</title>
         <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="/css/app.css" rel="stylesheet">
   <!-- FaveIcon -->
   <link rel="icon" href="images/logo.png">
   <!-- Font Awesome -->
